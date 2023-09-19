@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Aviator Sunglasses",
+        "brand": "Ray-Ban",
+        "price": 129.99,
+        "description": "Timeless aviator sunglasses with metal frames and UV-protective lenses.",
+        "image": "https://example.com/sunglasses/aviator.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 2,
+        "name": "Wayfarer Style Sunglasses",
+        "brand": "Oakley",
+        "price": 89.99,
+        "description": "Iconic wayfarer-style sunglasses with polarized lenses for enhanced clarity.",
+        "image": "https://example.com/sunglasses/wayfarer.jpg",
+        "rating": 4.5
+    },
+    {
+        "id": 3,
+        "name": "Sporty Wraparound Sunglasses",
+        "brand": "Nike",
+        "price": 79.99,
+        "description": "Sporty wraparound sunglasses with lightweight and durable construction.",
+        "image": "https://example.com/sunglasses/sporty.jpg",
+        "rating": 4.2
+    },
+    {
+        "id": 4,
+        "name": "Cat Eye Sunglasses",
+        "brand": "Prada",
+        "price": 199.99,
+        "description": "Chic cat-eye sunglasses with designer frames and gradient lenses.",
+        "image": "https://example.com/sunglasses/cat-eye.jpg",
+        "rating": 4.8
+    },
+    {
+        "id": 5,
+        "name": "Polarized Fishing Sunglasses",
+        "brand": "Costa Del Mar",
+        "price": 149.99,
+        "description": "Polarized sunglasses designed for fishing enthusiasts with specialized lenses.",
+        "image": "https://example.com/sunglasses/fishing.jpg",
+        "rating": 4.9
+    },
+    {
+        "id": 6,
+        "name": "Oversized Square Sunglasses",
+        "brand": "Gucci",
+        "price": 249.99,
+        "description": "Fashion-forward oversized square sunglasses with logo embellishments.",
+        "image": "https://example.com/sunglasses/oversized.jpg",
+        "rating": 4.6
+    },
+    {
+        "id": 7,
+        "name": "Vintage Round Sunglasses",
+        "brand": "RetroSpecs",
+        "price": 69.99,
+        "description": "Retro-style round sunglasses with UV-protective lenses and metal frames.",
+        "image": "https://example.com/sunglasses/vintage.jpg",
+        "rating": 4.4
+    },
+    {
+        "id": 8,
+        "name": "Sporty Wraparound Sunglasses",
+        "brand": "Adidas",
+        "price": 79.99,
+        "description": "Sporty wraparound sunglasses with a comfortable fit and mirrored lenses.",
+        "image": "https://example.com/sunglasses/sporty2.jpg",
+        "rating": 4.3
+    },
+    {
+        "id": 9,
+        "name": "Retro Clubmaster Sunglasses",
+        "brand": "Ray-Ban",
+        "price": 139.99,
+        "description": "Retro-style clubmaster sunglasses with tortoiseshell frames and clear lenses.",
+        "image": "https://example.com/sunglasses/clubmaster.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 10,
+        "name": "Round Mirrored Sunglasses",
+        "brand": "Prada",
+        "price": 189.99,
+        "description": "Round sunglasses with mirrored lenses and a touch of elegance.",
+        "image": "https://example.com/sunglasses/round-mirrored.jpg",
+        "rating": 4.8
+    },
+    {
+        "id": 11,
+        "name": "Sporty Shield Sunglasses",
+        "brand": "Nike",
+        "price": 99.99,
+        "description": "Sporty shield-style sunglasses with lightweight construction and ventilation.",
+        "image": "https://example.com/sunglasses/shield.jpg",
+        "rating": 4.4
+    },
+    {
+        "id": 12,
+        "name": "Classic Wayfarer Sunglasses",
+        "brand": "Ray-Ban",
+        "price": 129.99,
+        "description": "Timeless wayfarer sunglasses with iconic design and UV protection.",
+        "image": "https://example.com/sunglasses/wayfarer2.jpg",
+        "rating": 4.6
+    }
+]

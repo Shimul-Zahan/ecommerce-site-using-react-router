@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction",
+        "price": 12.99,
+        "description": "A classic novel set in the American South during the 1930s, addressing racial injustice and moral growth.",
+        "image": "https://example.com/books/to-kill-a-mockingbird.jpg",
+        "rating": 4.8
+    },
+    {
+        "id": 2,
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "price": 10.99,
+        "description": "A dystopian novel exploring themes of surveillance, totalitarianism, and the consequences of political oppression.",
+        "image": "https://example.com/books/1984.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 3,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Classic",
+        "price": 11.99,
+        "description": "A classic novel set in the Roaring Twenties, depicting the American Dream, wealth, and decadence.",
+        "image": "https://example.com/books/the-great-gatsby.jpg",
+        "rating": 4.6
+    },
+    {
+        "id": 4,
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "price": 14.99,
+        "description": "The first book in the Harry Potter series, following the young wizard's adventures at Hogwarts School of Witchcraft and Wizardry.",
+        "image": "https://example.com/books/harry-potter-and-the-sorcerers-stone.jpg",
+        "rating": 4.9
+    },
+    {
+        "id": 5,
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": "Coming-of-age",
+        "price": 9.99,
+        "description": "A coming-of-age novel following the experiences of Holden Caulfield in New York City.",
+        "image": "https://example.com/books/the-catcher-in-the-rye.jpg",
+        "rating": 4.5
+    },
+    {
+        "id": 6,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Romance",
+        "price": 10.99,
+        "description": "A classic romance novel focusing on the social norms and relationships of the early 19th century.",
+        "image": "https://example.com/books/pride-and-prejudice.jpg",
+        "rating": 4.8
+    },
+    {
+        "id": 7,
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "price": 13.99,
+        "description": "A fantasy novel following the journey of Bilbo Baggins as he embarks on an epic adventure.",
+        "image": "https://example.com/books/the-hobbit.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 8,
+        "title": "The Hunger Games",
+        "author": "Suzanne Collins",
+        "genre": "Dystopian",
+        "price": 11.99,
+        "description": "A dystopian novel where teenagers fight for survival in a televised event called the Hunger Games.",
+        "image": "https://example.com/books/the-hunger-games.jpg",
+        "rating": 4.6
+    },
+    {
+        "id": 9,
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "genre": "Adventure",
+        "price": 12.99,
+        "description": "A philosophical adventure novel following Santiago's journey to find his personal legend.",
+        "image": "https://example.com/books/the-alchemist.jpg",
+        "rating": 4.9
+    },
+    {
+        "id": 10,
+        "title": "The Shining",
+        "author": "Stephen King",
+        "genre": "Horror",
+        "price": 10.99,
+        "description": "A psychological horror novel that explores the supernatural events at the haunted Overlook Hotel.",
+        "image": "https://example.com/books/the-shining.jpg",
+        "rating": 4.5
+    }
+]

@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphone",
+        "category": "Electronics",
+        "price": 499.99,
+        "description": "High-end smartphone with a powerful processor and a stunning display.",
+        "image": "https://example.com/products/smartphone.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 2,
+        "name": "Laptop",
+        "category": "Electronics",
+        "price": 899.99,
+        "description": "Slim and lightweight laptop with a fast SSD and long battery life.",
+        "image": "https://example.com/products/laptop.jpg",
+        "rating": 4.8
+    },
+    {
+        "id": 3,
+        "name": "Wireless Headphones",
+        "category": "Electronics",
+        "price": 129.99,
+        "description": "Over-ear wireless headphones with noise-canceling technology.",
+        "image": "https://example.com/products/headphones.jpg",
+        "rating": 4.6
+    },
+    {
+        "id": 4,
+        "name": "Smart TV",
+        "category": "Electronics",
+        "price": 799.99,
+        "description": "Ultra-HD smart TV with streaming apps and voice control.",
+        "image": "https://example.com/products/tv.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 5,
+        "name": "Coffee Maker",
+        "category": "Home & Kitchen",
+        "price": 69.99,
+        "description": "Programmable coffee maker with a built-in grinder and brew strength control.",
+        "image": "https://example.com/products/coffee-maker.jpg",
+        "rating": 4.5
+    },
+    {
+        "id": 6,
+        "name": "Fitness Tracker",
+        "category": "Sports & Outdoors",
+        "price": 49.99,
+        "description": "Waterproof fitness tracker with heart rate monitoring and GPS.",
+        "image": "https://example.com/products/fitness-tracker.jpg",
+        "rating": 4.3
+    },
+    {
+        "id": 7,
+        "name": "Desk Chair",
+        "category": "Furniture",
+        "price": 149.99,
+        "description": "Ergonomic desk chair with adjustable lumbar support and breathable mesh back.",
+        "image": "https://example.com/products/desk-chair.jpg",
+        "rating": 4.4
+    },
+    {
+        "id": 8,
+        "name": "Washing Machine",
+        "category": "Appliances",
+        "price": 699.99,
+        "description": "Front-loading washing machine with multiple wash cycles and energy-saving features.",
+        "image": "https://example.com/products/washing-machine.jpg",
+        "rating": 4.6
+    },
+    {
+        "id": 9,
+        "name": "Backpack",
+        "category": "Fashion",
+        "price": 39.99,
+        "description": "Stylish backpack with multiple compartments and padded laptop sleeve.",
+        "image": "https://example.com/products/backpack.jpg",
+        "rating": 4.2
+    },
+    {
+        "id": 10,
+        "name": "Bluetooth Speaker",
+        "category": "Electronics",
+        "price": 79.99,
+        "description": "Portable Bluetooth speaker with deep bass and long battery life.",
+        "image": "https://example.com/products/speaker.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 11,
+        "name": "Dining Table",
+        "category": "Furniture",
+        "price": 299.99,
+        "description": "Solid wood dining table with a modern design and space for six people.",
+        "image": "https://example.com/products/dining-table.jpg",
+        "rating": 4.8
+    },
+    {
+        "id": 12,
+        "name": "Digital Camera",
+        "category": "Electronics",
+        "price": 599.99,
+        "description": "High-resolution digital camera with interchangeable lenses and 4K video recording.",
+        "image": "https://example.com/products/camera.jpg",
+        "rating": 4.9
+    },
+    {
+        "id": 13,
+        "name": "Microwave Oven",
+        "category": "Appliances",
+        "price": 89.99,
+        "description": "Countertop microwave oven with multiple cooking presets and a turntable.",
+        "image": "https://example.com/products/microwave.jpg",
+        "rating": 4.4
+    },
+    {
+        "id": 14,
+        "name": "Running Shoes",
+        "category": "Sports & Outdoors",
+        "price": 79.99,
+        "description": "High-performance running shoes with cushioning and stability features.",
+        "image": "https://example.com/products/running-shoes.jpg",
+        "rating": 4.5
+    },
+    {
+        "id": 15,
+        "name": "Gaming Console",
+        "category": "Electronics",
+        "price": 399.99,
+        "description": "Gaming console with 4K graphics, a fast processor, and a large game library.",
+        "image": "https://example.com/products/gaming-console.jpg",
+        "rating": 4.7
+    }
+]
