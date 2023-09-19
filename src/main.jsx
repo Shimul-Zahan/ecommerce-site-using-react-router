@@ -7,6 +7,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './Components/Home/Home.jsx';
+import AllProduct from './Components/AllProduct/AllProduct.jsx';
+import Book from './Components/AllProduct/Book/Book.jsx';
+import Sunglass from './Components/AllProduct/Sunglass/Sunglass.jsx';
+import Watches from './Components/AllProduct/Watches/Watches.jsx';
 
 const router = createBrowserRouter([
   {
@@ -14,16 +18,24 @@ const router = createBrowserRouter([
     element: <Home />,
     children: [
       {
-        path: '/about',
-        element: <h1>About Page</h1>
+        path: '/all',
+        loader: () => fetch('/public/Products/allProduct.json'),
+        element: <AllProduct />
       },
       {
-        path: '/contact',
-        element: <h1>Contact Page</h1>
+        path: '/book',
+        loader: () => fetch('/public/Products/book.json'),
+        element: <Book />
       },
       {
-        path: '/more',
-        element: <h1>More Page</h1>
+        path: '/sunglass',
+        loader: () => fetch('/public/Products/sunglass.json'),
+        element: <Sunglass />
+      },
+      {
+        path: '/watches',
+        loader: () => fetch('/public/Products/watches.json'),
+        element: <Watches />
       }
     ]
   }
