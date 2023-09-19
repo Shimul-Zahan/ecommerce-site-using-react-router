@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home.jsx';
 import AllProduct from './Components/AllProduct/AllProduct.jsx';
-import Book from './Components/AllProduct/Book/Book.jsx';
+import Books from './Components/AllProduct/Books/Books.jsx';
 import Sunglass from './Components/AllProduct/Sunglass/Sunglass.jsx';
 import Watches from './Components/AllProduct/Watches/Watches.jsx';
 
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       {
         path: '/book',
         loader: () => fetch('/public/Products/book.json'),
-        element: <Book />
+        element: <Books />
       },
       {
         path: '/sunglass',

@@ -6,7 +6,7 @@
         "genre": "Fiction",
         "price": 12.99,
         "description": "A classic novel set in the American South during the 1930s, addressing racial injustice and moral growth.",
-        "image": "https://example.com/books/to-kill-a-mockingbird.jpg",
+        "image": "https://i.ibb.co/10ng29J/bookbook3.png",
         "rating": 4.8
     },
     {
@@ -16,7 +16,7 @@
         "genre": "Dystopian",
         "price": 10.99,
         "description": "A dystopian novel exploring themes of surveillance, totalitarianism, and the consequences of political oppression.",
-        "image": "https://example.com/books/1984.jpg",
+        "image": "https://i.ibb.co/SdJw6zk/bookbook2.png",
         "rating": 4.7
     },
     {
@@ -26,7 +26,7 @@
         "genre": "Classic",
         "price": 11.99,
         "description": "A classic novel set in the Roaring Twenties, depicting the American Dream, wealth, and decadence.",
-        "image": "https://example.com/books/the-great-gatsby.jpg",
+        "image": "https://i.ibb.co/thf9FrM/bookbook1.png",
         "rating": 4.6
     },
     {
@@ -36,7 +36,7 @@
         "genre": "Fantasy",
         "price": 14.99,
         "description": "The first book in the Harry Potter series, following the young wizard's adventures at Hogwarts School of Witchcraft and Wizardry.",
-        "image": "https://example.com/books/harry-potter-and-the-sorcerers-stone.jpg",
+        "image": "https://i.ibb.co/yYgq56v/bookbook4.png",
         "rating": 4.9
     },
     {
@@ -46,7 +46,7 @@
         "genre": "Coming-of-age",
         "price": 9.99,
         "description": "A coming-of-age novel following the experiences of Holden Caulfield in New York City.",
-        "image": "https://example.com/books/the-catcher-in-the-rye.jpg",
+        "image": "https://i.ibb.co/5jgFJHj/bookbook5.png",
         "rating": 4.5
     },
     {
@@ -56,7 +56,7 @@
         "genre": "Romance",
         "price": 10.99,
         "description": "A classic romance novel focusing on the social norms and relationships of the early 19th century.",
-        "image": "https://example.com/books/pride-and-prejudice.jpg",
+        "image": "https://i.ibb.co/C9Gfbhw/bookbook6.png",
         "rating": 4.8
     },
     {
@@ -66,7 +66,7 @@
         "genre": "Fantasy",
         "price": 13.99,
         "description": "A fantasy novel following the journey of Bilbo Baggins as he embarks on an epic adventure.",
-        "image": "https://example.com/books/the-hobbit.jpg",
+        "image": "https://i.ibb.co/D8K1RTk/bookbook7.png",
         "rating": 4.7
     },
     {
@@ -76,7 +76,7 @@
         "genre": "Dystopian",
         "price": 11.99,
         "description": "A dystopian novel where teenagers fight for survival in a televised event called the Hunger Games.",
-        "image": "https://example.com/books/the-hunger-games.jpg",
+        "image": "https://i.ibb.co/Zgt9dny/bookbook8.png",
         "rating": 4.6
     },
     {
@@ -86,7 +86,7 @@
         "genre": "Adventure",
         "price": 12.99,
         "description": "A philosophical adventure novel following Santiago's journey to find his personal legend.",
-        "image": "https://example.com/books/the-alchemist.jpg",
+        "image": "https://i.ibb.co/HFfrjnD/bookbook9.png",
         "rating": 4.9
     },
     {
@@ -96,7 +96,7 @@
         "genre": "Horror",
         "price": 10.99,
         "description": "A psychological horror novel that explores the supernatural events at the haunted Overlook Hotel.",
-        "image": "https://example.com/books/the-shining.jpg",
+        "image": "https://i.ibb.co/MhtwLqx/bookbook10.png",
         "rating": 4.5
     }
 ]
