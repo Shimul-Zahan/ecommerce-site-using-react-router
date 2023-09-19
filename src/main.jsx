@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+// import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -9,7 +9,7 @@ import {
 import Home from './Components/Home/Home.jsx';
 import AllProduct from './Components/AllProduct/AllProduct.jsx';
 import Books from './Components/AllProduct/Books/Books.jsx';
-import Sunglass from './Components/AllProduct/Sunglass/Sunglass.jsx';
+import Sunglasses from './Components/AllProduct/Sunglasses/Sunglasses.jsx';
 import Watches from './Components/AllProduct/Watches/Watches.jsx';
 import Courses from './Components/AllProduct/Courses/Courses.jsx';
 
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: '/sunglass',
         loader: () => fetch('/public/Products/sunglass.json'),
-        element: <Sunglass />
+        element: <Sunglasses />
       },
       {
         path: '/watches',

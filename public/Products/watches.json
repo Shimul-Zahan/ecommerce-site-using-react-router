@@ -5,7 +5,7 @@
         "brand": "Apple",
         "price": 399.99,
         "description": "The latest Apple Watch with a larger display and advanced health features.",
-        "image": "https://example.com/watches/apple-watch-series-7.jpg",
+        "image": "https://i.ibb.co/Np0hwRN/ab-KOq-I8-Ky-Yahg-unsplash.jpg",
         "rating": 4.8
     },
     {
@@ -14,7 +14,7 @@
         "brand": "Samsung",
         "price": 349.99,
         "description": "The Galaxy Watch 4 with ECG, blood pressure monitoring, and AMOLED display.",
-        "image": "https://example.com/watches/galaxy-watch-4.jpg",
+        "image": "https://i.ibb.co/TTGCkgZ/daniel-korpai-Qh-F3-YGs-Dr-Yk-unsplash.jpg",
         "rating": 4.7
     },
     {
@@ -23,7 +23,7 @@
         "brand": "Fitbit",
         "price": 199.99,
         "description": "Versatile smartwatch with built-in GPS and long battery life.",
-        "image": "https://example.com/watches/fitbit-versa-3.jpg",
+        "image": "https://i.ibb.co/4fkc2C0/david-svihovec-v8-BDEj9bfcs-unsplash.jpg",
         "rating": 4.6
     },
     {
@@ -32,7 +32,7 @@
         "brand": "Garmin",
         "price": 549.99,
         "description": "Advanced GPS smartwatch for runners with performance metrics.",
-        "image": "https://example.com/watches/garmin-forerunner-945.jpg",
+        "image": "https://i.ibb.co/0qhHxVT/infino-photography-LAacfd1-Hn8g-unsplash.jpg",
         "rating": 4.9
     },
     {
@@ -41,7 +41,7 @@
         "brand": "Amazfit",
         "price": 149.99,
         "description": "Stylish and affordable smartwatch with SpO2 and sleep tracking.",
-        "image": "https://example.com/watches/amazfit-gts-3.jpg",
+        "image": "https://i.ibb.co/wKjc2Dt/infino-photography-URl-Xm2-Kx6u-I-unsplash.jpg",
         "rating": 4.5
     },
     {
@@ -50,7 +50,7 @@
         "brand": "Fossil",
         "price": 279.99,
         "description": "Fashionable smartwatch with Wear OS by Google and heart rate monitoring.",
-        "image": "https://example.com/watches/fossil-gen-6.jpg",
+        "image": "https://i.ibb.co/ZfcZFVw/ivan-shilov-Ki-AYZZjpjk-Q-unsplash.jpg",
         "rating": 4.4
     },
     {
@@ -59,7 +59,7 @@
         "brand": "Huawei",
         "price": 299.99,
         "description": "Feature-packed smartwatch with HarmonyOS and fitness tracking.",
-        "image": "https://example.com/watches/huawei-watch-gt-3.jpg",
+        "image": "https://i.ibb.co/SfMrwgw/klim-musalimov-IGO10-Lkx-P-g-unsplash.jpg",
         "rating": 4.7
     },
     {
@@ -68,7 +68,7 @@
         "brand": "Mobvoi",
         "price": 299.99,
         "description": "Dual-screen smartwatch with long battery life and essential health sensors.",
-        "image": "https://example.com/watches/ticwatch-pro-3.jpg",
+        "image": "https://i.ibb.co/9qmCK6Z/lloyd-dirks-0vsk2-9dkqo-unsplash.jpg",
         "rating": 4.6
     },
     {
@@ -77,7 +77,7 @@
         "brand": "Withings",
         "price": 179.99,
         "description": "Hybrid smartwatch with heart rate tracking and sport features.",
-        "image": "https://example.com/watches/withings-steel-hr-sport.jpg",
+        "image": "https://i.ibb.co/M6mgcJC/lloyd-dirks-qd-Y76g-IYbw8-unsplash.jpg",
         "rating": 4.4
     },
     {
@@ -86,7 +86,7 @@
         "brand": "Xiaomi",
         "price": 79.99,
         "description": "Affordable smartwatch with fitness tracking and long-lasting battery.",
-        "image": "https://example.com/watches/xiaomi-mi-watch-lite.jpg",
+        "image": "https://i.ibb.co/1Q51pF8/rachit-tank-2c-FZ-FB08-UM-unsplash.jpg",
         "rating": 4.3
     }
 ]

@@ -5,7 +5,7 @@
         "category": "Electronics",
         "price": 499.99,
         "description": "High-end smartphone with a powerful processor and a stunning display.",
-        "image": "https://example.com/products/smartphone.jpg",
+        "image": "https://i.ibb.co/KxrsGCd/shiwa-id-Uae7ou-Mw91-A-unsplash.jpg",
         "rating": 4.7
     },
     {
@@ -14,7 +14,7 @@
         "category": "Electronics",
         "price": 899.99,
         "description": "Slim and lightweight laptop with a fast SSD and long battery life.",
-        "image": "https://example.com/products/laptop.jpg",
+        "image": "https://i.ibb.co/TqZqTjp/joshua-woroniecki-lzh3h-Pt-Jz9c-unsplash.jpg",
         "rating": 4.8
     },
     {
@@ -23,7 +23,7 @@
         "category": "Electronics",
         "price": 129.99,
         "description": "Over-ear wireless headphones with noise-canceling technology.",
-        "image": "https://example.com/products/headphones.jpg",
+        "image": "https://i.ibb.co/kJYDqWM/alexunder-hess-b-WZAPKm0z-ZE-unsplash.jpg",
         "rating": 4.6
     },
     {
@@ -32,7 +32,7 @@
         "category": "Electronics",
         "price": 799.99,
         "description": "Ultra-HD smart TV with streaming apps and voice control.",
-        "image": "https://example.com/products/tv.jpg",
+        "image": "https://i.ibb.co/Wxr8WnR/jan-bottinger-k-Chsh-W17rw-unsplash.jpg",
         "rating": 4.7
     },
     {
@@ -41,7 +41,7 @@
         "category": "Home & Kitchen",
         "price": 69.99,
         "description": "Programmable coffee maker with a built-in grinder and brew strength control.",
-        "image": "https://example.com/products/coffee-maker.jpg",
+        "image": "https://i.ibb.co/6F2HPJx/milada-vigerova-x7mq-POxu-JNw-unsplash.jpg",
         "rating": 4.5
     },
     {
@@ -50,7 +50,7 @@
         "category": "Sports & Outdoors",
         "price": 49.99,
         "description": "Waterproof fitness tracker with heart rate monitoring and GPS.",
-        "image": "https://example.com/products/fitness-tracker.jpg",
+        "image": "https://i.ibb.co/VLCgBnP/arthur-hinton-Ybg-Lm-O7m-GQ-unsplash.jpg",
         "rating": 4.3
     },
     {
@@ -59,7 +59,7 @@
         "category": "Furniture",
         "price": 149.99,
         "description": "Ergonomic desk chair with adjustable lumbar support and breathable mesh back.",
-        "image": "https://example.com/products/desk-chair.jpg",
+        "image": "https://i.ibb.co/jHGHmW0/minh-pham-l-B9yl-P8e9-Sg-unsplash.jpg",
         "rating": 4.4
     },
     {
@@ -68,7 +68,7 @@
         "category": "Appliances",
         "price": 699.99,
         "description": "Front-loading washing machine with multiple wash cycles and energy-saving features.",
-        "image": "https://example.com/products/washing-machine.jpg",
+        "image": "https://i.ibb.co/zP4QD92/planetcare-5cp-BWEl6y6c-unsplash.jpg",
         "rating": 4.6
     },
     {
@@ -77,7 +77,7 @@
         "category": "Fashion",
         "price": 39.99,
         "description": "Stylish backpack with multiple compartments and padded laptop sleeve.",
-        "image": "https://example.com/products/backpack.jpg",
+        "image": "https://i.ibb.co/D8hCCCb/wiser-by-the-mile-3o-X8-WJOP5-E-unsplash.jpg",
         "rating": 4.2
     },
     {
@@ -86,7 +86,7 @@
         "category": "Electronics",
         "price": 79.99,
         "description": "Portable Bluetooth speaker with deep bass and long battery life.",
-        "image": "https://example.com/products/speaker.jpg",
+        "image": "https://i.ibb.co/1qzrLNR/jonas-jacobsson-VSYq9n-S-f-Y0-unsplash.jpg",
         "rating": 4.7
     },
     {
@@ -95,7 +95,7 @@
         "category": "Furniture",
         "price": 299.99,
         "description": "Solid wood dining table with a modern design and space for six people.",
-        "image": "https://example.com/products/dining-table.jpg",
+        "image": "https://i.ibb.co/1rfwVvw/cameron-smith-7-Oey-Nx69jfs-unsplash.jpg",
         "rating": 4.8
     },
     {
@@ -104,7 +104,7 @@
         "category": "Electronics",
         "price": 599.99,
         "description": "High-resolution digital camera with interchangeable lenses and 4K video recording.",
-        "image": "https://example.com/products/camera.jpg",
+        "image": "https://i.ibb.co/x3CSBMN/tengyart-S5yh-Q0-Xjdo8-unsplash.jpg",
         "rating": 4.9
     },
     {
@@ -113,7 +113,7 @@
         "category": "Appliances",
         "price": 89.99,
         "description": "Countertop microwave oven with multiple cooking presets and a turntable.",
-        "image": "https://example.com/products/microwave.jpg",
+        "image": "https://i.ibb.co/1qQkj1y/vlad-zaytsev-DV3xrcq6h-U4-unsplash.jpg",
         "rating": 4.4
     },
     {
@@ -122,7 +122,7 @@
         "category": "Sports & Outdoors",
         "price": 79.99,
         "description": "High-performance running shoes with cushioning and stability features.",
-        "image": "https://example.com/products/running-shoes.jpg",
+        "image": "https://i.ibb.co/825vkZz/martin-katler-Y4f-KN-Rl-MV4-unsplash.jpg",
         "rating": 4.5
     },
     {
@@ -131,7 +131,7 @@
         "category": "Electronics",
         "price": 399.99,
         "description": "Gaming console with 4K graphics, a fast processor, and a large game library.",
-        "image": "https://example.com/products/gaming-console.jpg",
+        "image": "https://i.ibb.co/N1FztSz/venson-chou-n-D2-Bj-SLt0u-E-unsplash.jpg",
         "rating": 4.7
     }
 ]
