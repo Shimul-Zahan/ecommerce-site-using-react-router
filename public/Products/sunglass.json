@@ -5,7 +5,7 @@
         "brand": "Ray-Ban",
         "price": 129.99,
         "description": "Timeless aviator sunglasses with metal frames and UV-protective lenses.",
-        "image": "https://example.com/sunglasses/aviator.jpg",
+        "image": "https://i.ibb.co/SQ2tQmM/annie-williams-Fl-P6-C5pk-MKs-unsplash.jpg",
         "rating": 4.7
     },
     {
@@ -14,7 +14,7 @@
         "brand": "Oakley",
         "price": 89.99,
         "description": "Iconic wayfarer-style sunglasses with polarized lenses for enhanced clarity.",
-        "image": "https://example.com/sunglasses/wayfarer.jpg",
+        "image": "https://i.ibb.co/wLJbCTc/charlesdeluvio-1-nx1-QR5d-TE-unsplash.jpg",
         "rating": 4.5
     },
     {
@@ -23,7 +23,7 @@
         "brand": "Nike",
         "price": 79.99,
         "description": "Sporty wraparound sunglasses with lightweight and durable construction.",
-        "image": "https://example.com/sunglasses/sporty.jpg",
+        "image": "https://i.ibb.co/28vqXhb/ethan-robertson-SYx3-UCHZJlo-unsplash.jpg",
         "rating": 4.2
     },
     {
@@ -32,7 +32,7 @@
         "brand": "Prada",
         "price": 199.99,
         "description": "Chic cat-eye sunglasses with designer frames and gradient lenses.",
-        "image": "https://example.com/sunglasses/cat-eye.jpg",
+        "image": "https://i.ibb.co/JC8Wt6b/florencia-simonini-k-OGPvmv-YVIs-unsplash.jpg",
         "rating": 4.8
     },
     {
@@ -41,7 +41,7 @@
         "brand": "Costa Del Mar",
         "price": 149.99,
         "description": "Polarized sunglasses designed for fishing enthusiasts with specialized lenses.",
-        "image": "https://example.com/sunglasses/fishing.jpg",
+        "image": "https://i.ibb.co/t8mS3pJ/kilian-seiler-Fisl-Cu-Tmm-Os-unsplash.jpg",
         "rating": 4.9
     },
     {
@@ -50,7 +50,7 @@
         "brand": "Gucci",
         "price": 249.99,
         "description": "Fashion-forward oversized square sunglasses with logo embellishments.",
-        "image": "https://example.com/sunglasses/oversized.jpg",
+        "image": "https://i.ibb.co/bRWxdPL/kiran-ck-l-Sl94-SZHRg-A-unsplash.jpg",
         "rating": 4.6
     },
     {
@@ -59,7 +59,7 @@
         "brand": "RetroSpecs",
         "price": 69.99,
         "description": "Retro-style round sunglasses with UV-protective lenses and metal frames.",
-        "image": "https://example.com/sunglasses/vintage.jpg",
+        "image": "https://i.ibb.co/C1xpXtD/lucas-george-wendt-3xt-Ce-Uhq-ZWE-unsplash.jpg",
         "rating": 4.4
     },
     {
@@ -68,7 +68,7 @@
         "brand": "Adidas",
         "price": 79.99,
         "description": "Sporty wraparound sunglasses with a comfortable fit and mirrored lenses.",
-        "image": "https://example.com/sunglasses/sporty2.jpg",
+        "image": "https://i.ibb.co/s9CR63Y/sebastian-coman-travel-dt-OTQYm-TEs0-unsplash.jpg",
         "rating": 4.3
     },
     {
@@ -77,7 +77,7 @@
         "brand": "Ray-Ban",
         "price": 139.99,
         "description": "Retro-style clubmaster sunglasses with tortoiseshell frames and clear lenses.",
-        "image": "https://example.com/sunglasses/clubmaster.jpg",
+        "image": "https://i.ibb.co/CPQc2HV/stephanie-hau-P4-TPj-OXKq-Y8-unsplash.jpg",
         "rating": 4.7
     },
     {
@@ -86,7 +86,7 @@
         "brand": "Prada",
         "price": 189.99,
         "description": "Round sunglasses with mirrored lenses and a touch of elegance.",
-        "image": "https://example.com/sunglasses/round-mirrored.jpg",
+        "image": "https://i.ibb.co/t8mS3pJ/kilian-seiler-Fisl-Cu-Tmm-Os-unsplash.jpg",
         "rating": 4.8
     },
     {
@@ -95,7 +95,7 @@
         "brand": "Nike",
         "price": 99.99,
         "description": "Sporty shield-style sunglasses with lightweight construction and ventilation.",
-        "image": "https://example.com/sunglasses/shield.jpg",
+        "image": "https://i.ibb.co/C1xpXtD/lucas-george-wendt-3xt-Ce-Uhq-ZWE-unsplash.jpg",
         "rating": 4.4
     },
     {
@@ -104,7 +104,7 @@
         "brand": "Ray-Ban",
         "price": 129.99,
         "description": "Timeless wayfarer sunglasses with iconic design and UV protection.",
-        "image": "https://example.com/sunglasses/wayfarer2.jpg",
+        "image": "https://i.ibb.co/28vqXhb/ethan-robertson-SYx3-UCHZJlo-unsplash.jpg",
         "rating": 4.6
     }
 ]

@@ -11,6 +11,7 @@ import AllProduct from './Components/AllProduct/AllProduct.jsx';
 import Books from './Components/AllProduct/Books/Books.jsx';
 import Sunglass from './Components/AllProduct/Sunglass/Sunglass.jsx';
 import Watches from './Components/AllProduct/Watches/Watches.jsx';
+import Courses from './Components/AllProduct/Courses/Courses.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
         path: '/all',
         loader: () => fetch('/public/Products/allProduct.json'),
         element: <AllProduct />
+      },
+      {
+        path: '/courses',
+        loader: () => fetch('/public/Products/courses.json'),
+        element: <Courses />
       },
       {
         path: '/book',
