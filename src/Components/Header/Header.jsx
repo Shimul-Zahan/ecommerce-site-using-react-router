@@ -17,8 +17,9 @@ const Header = () => {
                   <Link className='mx-10' to="/watches">Watches</Link>
               </ul>
           </div>
-          <div className="navbar-end">
-              <a className="btn">Button</a>
+          <div className="navbar-end space-x-4 text-xl text-white">
+              <Link to='/register'>Register</Link>
+              <Link to='/login'>Login</Link>
           </div>
       </div>
   )

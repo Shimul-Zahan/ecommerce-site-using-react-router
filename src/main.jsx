@@ -12,6 +12,8 @@ import Books from './Components/AllProduct/Books/Books.jsx';
 import Sunglasses from './Components/AllProduct/Sunglasses/Sunglasses.jsx';
 import Watches from './Components/AllProduct/Watches/Watches.jsx';
 import Courses from './Components/AllProduct/Courses/Courses.jsx';
+import Login from './Components/AllProduct/Login/Login';
+import Register from './Components/AllProduct/Register/Register';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
         path: '/watches',
         loader: () => fetch('/public/Products/watches.json'),
         element: <Watches />
+      },
+      {
+        path: '/register',
+        element: <Register />
+      },
+      {
+        path: '/login',
+        element: <Login />
       }
     ]
   }
