@@ -5,7 +5,7 @@ const Header = () => {
   return (
       <div className="navbar bg-base-100 py-8">
           <div className="navbar-start">
-              <a className="text-2xl font-bold">Algo Hut</a>
+              <a className="text-2xl font-bold"><Link to='/'>Foki<span className='text-yellow-500'>nnir Ba</span>zar</Link></a>
           </div>
           <div className="navbar-center hidden lg:flex">
               <ul className="menu menu-horizontal px-1 text-xl text-white">
