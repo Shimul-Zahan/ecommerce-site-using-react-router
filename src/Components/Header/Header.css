@@ -1,0 +1,5 @@
+a.active {
+  color: rgba(207, 207, 15, 0.838);
+  text-decoration: underline;
+  transform: scale(1.2);
+}
