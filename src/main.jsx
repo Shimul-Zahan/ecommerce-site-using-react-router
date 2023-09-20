@@ -14,6 +14,7 @@ import Watches from './Components/AllProduct/Watches/Watches.jsx';
 import Courses from './Components/AllProduct/Courses/Courses.jsx';
 import Login from './Components/AllProduct/Login/Login';
 import Register from './Components/AllProduct/Register/Register';
+import TotalProducts from './Components/AllProduct/TotalProducts/TotalProducts';
 
 const router = createBrowserRouter([
   {
@@ -21,28 +22,33 @@ const router = createBrowserRouter([
     element: <Home />,
     children: [
       {
+        path: '/',
+        loader: () => fetch('https://fakestoreapi.com/products'),
+        element: <TotalProducts />
+      },
+      {
         path: '/all',
-        loader: () => fetch('/public/Products/allProduct.json'),
+        loader: () => fetch('/Products/allProduct.json'),
         element: <AllProduct />
       },
       {
         path: '/courses',
-        loader: () => fetch('/public/Products/courses.json'),
+        loader: () => fetch('/Products/courses.json'),
         element: <Courses />
       },
       {
         path: '/book',
-        loader: () => fetch('/public/Products/book.json'),
+        loader: () => fetch('/Products/book.json'),
         element: <Books />
       },
       {
         path: '/sunglass',
-        loader: () => fetch('/public/Products/sunglass.json'),
+        loader: () => fetch('/Products/sunglass.json'),
         element: <Sunglasses />
       },
       {
         path: '/watches',
-        loader: () => fetch('/public/Products/watches.json'),
+        loader: () => fetch('/Products/watches.json'),
         element: <Watches />
       },
       {
