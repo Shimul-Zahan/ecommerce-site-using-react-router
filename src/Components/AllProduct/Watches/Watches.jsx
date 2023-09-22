@@ -1,10 +1,13 @@
 import React from 'react'
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 import Watch from './Watch/Watch';
 
 const Watches = () => {
   
     const watches = useLoaderData();
+    const { id } = useParams();
+
+    console.log(id);
 
     return (
         <div className='pt-10 flex flex-col justify-center items-center'>

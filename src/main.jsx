@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 // import App from './App.jsx'
 import './index.css'
@@ -15,6 +15,9 @@ import Courses from './Components/AllProduct/Courses/Courses.jsx';
 import Login from './Components/AllProduct/Login/Login';
 import Register from './Components/AllProduct/Register/Register';
 import TotalProducts from './Components/AllProduct/TotalProducts/TotalProducts';
+import IndivisualItem from './Components/AllProduct/IndivisualItem/IndivisualItem';
+import BookDetailsShow from './Components/DetailsShow/BookDetailsShow';
+import SunglassDetailsShow from './Components/DetailsShow/SunglassDetailsShow';
 
 const router = createBrowserRouter([
   {
@@ -42,12 +45,27 @@ const router = createBrowserRouter([
         element: <Books />
       },
       {
+        path: '/book/:id',
+        element: <BookDetailsShow />,
+        loader: () => fetch('/Products/book.json')
+      },
+      {
         path: '/sunglass',
         loader: () => fetch('/Products/sunglass.json'),
         element: <Sunglasses />
       },
       {
+        path: '/sunglass/:id',
+        loader: () => fetch('/Products/sunglass.json'),
+        element: <SunglassDetailsShow />
+      },
+      {
         path: '/watches',
+        loader: () => fetch('/Products/watches.json'),
+        element: <Watches />
+      },
+      {
+        path: '/watches/:id',
         loader: () => fetch('/Products/watches.json'),
         element: <Watches />
       },
@@ -58,7 +76,8 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login />
-      }
+      },
+      
     ]
   }
 ])

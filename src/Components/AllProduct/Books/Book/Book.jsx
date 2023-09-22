@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 
 const Book = ({ book }) => {
 
-    const { title, genre, description, price, author, image, rating } = book;
+    const { id, title, genre, description, price, author, image, rating } = book;
 
     return (
         <div className="card w-80 bg-base-100 shadow-xl">
@@ -16,7 +17,11 @@ const Book = ({ book }) => {
                 </h2>
                 <p className='text-lg font-medium'>If a dog chews shoes whose Book does he choose?</p>
                 <div className="card-actions justify-end">
-                    <div className="badge badge-outline cursor-pointer">More Details</div>
+                    <div className="badge badge-outline cursor-pointer">
+                        <Link to={`/book/${id}`}>
+                            <button>More Details</button>
+                        </Link>
+                    </div>
                     <div className="badge badge-outline cursor-pointer">Buy Now</div>
                 </div>
             </div>
