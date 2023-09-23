@@ -18,6 +18,7 @@ import TotalProducts from './Components/AllProduct/TotalProducts/TotalProducts';
 import IndivisualItem from './Components/AllProduct/IndivisualItem/IndivisualItem';
 import BookDetailsShow from './Components/DetailsShow/BookDetailsShow';
 import SunglassDetailsShow from './Components/DetailsShow/SunglassDetailsShow';
+import Cart from './Cart/Cart';
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
         path: '/watches/:id',
         loader: () => fetch('/Products/watches.json'),
         element: <Watches />
+      },
+      {
+        path: '/cart',
+        element: <Cart />
       },
       {
         path: '/register',

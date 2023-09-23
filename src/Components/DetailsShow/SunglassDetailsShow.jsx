@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLoaderData, useParams, Link } from 'react-router-dom'
+import { saveToLC } from '../../Utils/LocalStore/LocalStore';
 
 const SunglassDetailsShow = () => {
 
@@ -8,6 +9,10 @@ const SunglassDetailsShow = () => {
 
     const selectItem = sunglass.find(item => item.id == id)
 
+    const addToLocalStorage = item => {
+        saveToLC(selectItem);
+    }
+
   return (
       <div className='mt-10'>
           <img src={selectItem.image} alt="" className='h-[500px] w-[500px]'/>
@@ -15,7 +20,7 @@ const SunglassDetailsShow = () => {
           <h1 className="text-xl"><strong>{selectItem.genre}</strong></h1>
           <h1 className="text-base font-medium">{selectItem.description}</h1>
           <h1 className="text-3xl font-bold">${selectItem.price}</h1>
-          <Link to='/sunglass'><button className='btn btn-outline btn-success'>Back</button></Link>
+          <Link><button onClick={addToLocalStorage} className='btn btn-outline btn-success'>Back</button></Link>
       </div>
   )
 }

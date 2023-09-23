@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Header.css';
+import { BsFillCartCheckFill } from 'react-icons/bs';
 
 const Header = () => {
   return (
@@ -16,6 +17,7 @@ const Header = () => {
                   <NavLink className='mx-10' to="/book">Book</NavLink>
                   <NavLink className='mx-10' to="/sunglass">Sunglass</NavLink>
                   <NavLink className='mx-10' to="/watches">Watches</NavLink>
+                  <NavLink className='mx-10' to="/cart"> <BsFillCartCheckFill/> </NavLink>
               </ul>
           </div>
           <div className="navbar-end space-x-4 text-xl text-white">
