@@ -20,7 +20,7 @@ const SunglassDetailsShow = () => {
           <h1 className="text-xl"><strong>{selectItem.genre}</strong></h1>
           <h1 className="text-base font-medium">{selectItem.description}</h1>
           <h1 className="text-3xl font-bold">${selectItem.price}</h1>
-          <Link><button onClick={addToLocalStorage} className='btn btn-outline btn-success'>Back</button></Link>
+          <Link><button onClick={addToLocalStorage} className='btn btn-outline btn-success'>Add to cart</button></Link>
       </div>
   )
 }
