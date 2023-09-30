@@ -19,6 +19,7 @@ import IndivisualItem from './Components/AllProduct/IndivisualItem/IndivisualIte
 import BookDetailsShow from './Components/DetailsShow/BookDetailsShow';
 import SunglassDetailsShow from './Components/DetailsShow/SunglassDetailsShow';
 import Cart from './Cart/Cart';
+import Profile from './UserProfile/Profile';
 
 const router = createBrowserRouter([
   {
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login />
+      },
+      {
+        path: '/userProfile',
+        element: <Profile/>
       },
       
     ]

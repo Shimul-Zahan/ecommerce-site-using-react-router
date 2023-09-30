@@ -3,43 +3,132 @@ import { Link, NavLink } from 'react-router-dom'
 import './Header.css';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 import { searchItemInLC } from '../../Utils/LocalStore/LocalStore';
+import { GoogleAuthProvider, getAuth, signInWithPopup, signOut } from "firebase/auth";
+import app from '../../Firebase/firebase.config';
+
+// login er kaj kam
 
 const Header = () => {
-
     const [cartProducts, setCartProsucts] = useState([]);
-    
+
     useEffect(() => {
         const totalProductOfCart = searchItemInLC();
         setCartProsucts(totalProductOfCart)
         // problems hocche
     }, [])
 
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
 
-  return (
-      <div className="navbar bg-base-100 py-8">
-          <div className="navbar-start">
-              <a className="text-2xl font-bold"><Link to='/'>Foki<span className='text-yellow-500'>nnir Ba</span>zar</Link></a>
-          </div>
-          <div className="navbar-center hidden lg:flex">
-              <ul className="menu menu-horizontal flex justify-center items-center px-1 text-xl text-black">
-                  <NavLink className='mx-10' to="/">Home</NavLink>
-                  <NavLink className='mx-10' to="/all">All Products</NavLink>
-                  <NavLink className='mx-10' to="/courses">Courses</NavLink>
-                  <NavLink className='mx-10' to="/book">Book</NavLink>
-                  <NavLink className='mx-10' to="/sunglass">Sunglass</NavLink>
-                  <NavLink className='mx-10' to="/watches">Watches</NavLink>
-                  <div className='relative'>
-                      <NavLink className='mx-10' to="/cart"> <BsFillCartCheckFill /> </NavLink>
-                      <h1 className='absolute top-5 right-3 bg-green-600 rounded-full h-4 w-4 text-sm flex justify-center items-center text-white'>{ cartProducts.length }</h1>
-                  </div>
-              </ul>
-          </div>
-          <div className="navbar-end space-x-4 text-xl text-black">
-              <NavLink to='/register'>Register</NavLink>
-              <NavLink to='/login'>Login</NavLink>
-          </div>
-      </div>
-  )
+    const [loggedUser, setLoggedUser] = useState(null);
+
+    const loginUser = () => {
+        signInWithPopup(auth, provider).then(result => {
+            const user = result.user;
+            setLoggedUser(user);
+            console.log(user.photoURL);
+            console.log(user);
+        })
+            .catch(error => {
+                console.log('error', error)
+            })
+    }
+
+    const singOut = () => {
+        signOut(auth).then(() => {
+            setLoggedUser(null);
+            console.log('Successfull logged out');
+        }).catch((error) => {
+            console.log(error)
+        });
+    }
+
+
+
+    return (
+        <div className="navbar bg-base-200 py-8">
+            <div className="navbar-start">
+                <a className="text-2xl font-bold"><Link to='/'>Foki<span className='text-yellow-500'>nnir Ba</span>zar</Link></a>
+            </div>
+            <div className="navbar-center hidden lg:flex">
+                <ul className="menu menu-horizontal flex justify-center items-center gap-0 text-lg text-black">
+                    <NavLink className='mx-10' to="/">Home</NavLink>
+                    <NavLink className='mx-10' to="/all">All Products</NavLink>
+                    <NavLink className='mx-10' to="/courses">Courses</NavLink>
+                    <NavLink className='mx-10' to="/book">Book</NavLink>
+                    <NavLink className='mx-10' to="/sunglass">Sunglass</NavLink>
+                    <NavLink className='mx-10' to="/watches">Watches</NavLink>
+                    <div className='relative'>
+                        <NavLink className='mx-10' to="/cart"> <BsFillCartCheckFill /> </NavLink>
+                        <h1 className='absolute top-5 right-3 bg-green-600 rounded-full h-4 w-4 text-sm flex justify-center items-center text-white'>{cartProducts.length}</h1>
+                    </div>
+                </ul>
+            </div>
+            <div className="navbar-end text-xl text-black">
+                {/* {
+                    loggedUser ?
+                        <Link onClick={singOut} className='mx-10' to="/watches">Logout</Link> :
+                        <Link onClick={loginUser} className='mx-10' to="/watches">Login</Link>
+                }
+                {
+                    loggedUser &&
+                    <Link to='/userProfile'>
+                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img src={loggedUser.photoURL} />
+                                </div>
+                            </label>
+                    </Link>
+                } */}
+                <div className="flex justify-center items-center gap-8">
+                    {
+                        loggedUser ? 
+                        <div className="dropdown dropdown-end">
+                            <label tabIndex={0} className="btn btn-ghost btn-circle">
+                                <div className="indicator">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                                    <span className="badge bg-red-500 badge-sm indicator-item">8</span>
+                                </div>
+                            </label>
+                            <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                                <div className="card-body">
+                                    <span className="font-bold text-lg">8 Items</span>
+                                    <span className="text-info">Subtotal: $999</span>
+                                    <div className="card-actions">
+                                        <button className="btn btn-primary btn-block">View cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div> :
+                            <Link onClick={loginUser} className='mx-10 btn btn-secondary btn-outline' to="">Login</Link>
+                    }
+                    <div className="dropdown dropdown-end">
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                            <div className="w-10 rounded-full">
+                                <img src={loggedUser?.photoURL} />
+                            </div>
+                        </label>
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">      
+                            <li>
+                                <a className="justify-between">
+                                    Profile
+                                    <span className="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li>
+                                {
+                                    loggedUser ? 
+                                        <Link onClick={singOut} className='' to="">Logout</Link> :
+                                        <Link onClick={loginUser} className='' to="">Login</Link>
+                                }
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Header
