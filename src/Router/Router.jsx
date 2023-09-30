@@ -2,18 +2,6 @@ import React from 'react'
 import {
     createBrowserRouter,
 } from "react-router-dom";
-// import Books from './Components/AllProduct/Books/Books.jsx';
-// import Sunglasses from './Components/AllProduct/Sunglasses/Sunglasses.jsx';
-// import Watches from './Components/AllProduct/Watches/Watches.jsx';
-// import Courses from './Components/AllProduct/Courses/Courses.jsx';
-// import Login from './Components/AllProduct/Login/Login';
-// import Register from './Components/AllProduct/Register/Register';
-// import TotalProducts from './Components/AllProduct/TotalProducts/TotalProducts';
-// import IndivisualItem from './Components/AllProduct/IndivisualItem/IndivisualItem';
-// import BookDetailsShow from './Components/DetailsShow/BookDetailsShow';
-// import SunglassDetailsShow from './Components/DetailsShow/SunglassDetailsShow';
-// import Cart from './Cart/Cart';
-// import Profile from './UserProfile/Profile';
 import Home from '../Components/Home/Home.jsx';
 import AllProduct from '../Components/AllProduct/AllProduct.jsx';
 import Books from '../Components/AllProduct/Books/Books.jsx';
@@ -26,6 +14,7 @@ import TotalProducts from '../Components/AllProduct/TotalProducts/TotalProducts'
 import SunglassDetailsShow from '../Components/DetailsShow/SunglassDetailsShow';
 import Cart from '../Cart/Cart.jsx';
 import BookDetailsShow from '../Components/DetailsShow/BookDetailsShow';
+import Profile from '../UserProfile/Profile.jsx';
 
 const router = createBrowserRouter([
     {
@@ -89,11 +78,10 @@ const router = createBrowserRouter([
                 path: '/login',
                 element: <Login/>
             },
-            // {
-            //     path: '/userProfile',
-            //     element: <Profile />
-            // },
-
+            {
+                path: '/profile',
+                element: <Profile/>
+            }
         ]
     }
 ])

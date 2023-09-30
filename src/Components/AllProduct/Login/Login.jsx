@@ -1,12 +1,13 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { MyContext } from '../../../Context/MyContextAPI'
 
 const Login = () => {
 
-    const { singUpGoogle, signUpwithEmail } = useContext(MyContext)
+    const { singUpGoogle, signUpwithEmail, paswordReset } = useContext(MyContext)
     const navigate = useNavigate();
     const [error, setError] = useState(null);
+    const emailRef = useRef(null);
 
     const handleLoginUsingEmail = (e) => {
         e.preventDefault();
@@ -23,7 +24,28 @@ const Login = () => {
             })
             .catch(error => {
                 setError(error.message.slice(10, 100))
+            })
+        
+        // emailVerification()
+        //     .then(res => {
+        //         alert('Cheek email for verification');
+        //     })
+        //     .catch(error => {
+        //         setError(error.message);
+        // })
+    }
+
+    const forgotPassword = (e) => {
+        e.preventDefault();
+        const currentEmail = emailRef.current.value;
+        paswordReset(currentEmail)
+            .then(res => {
+                alert('Cheek email for reset password');
+            })
+            .catch(error => {
+            setError(error.message)
         })
+        console.log();
     }
 
 
@@ -54,7 +76,7 @@ const Login = () => {
                         <form className="space-y-4 md:space-y-6" onSubmit={handleLoginUsingEmail}>
                             <div>
                                 <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                                <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="" />
+                                <input type="email" ref={emailRef} name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="" />
                             </div>
                             <div>
                                 <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
@@ -62,6 +84,7 @@ const Login = () => {
                             </div>
 
                             <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 btn btn-outline btn-secondary">Log In</button>
+                            <Link onClick={forgotPassword} className="text-red-500 text-sm">Forgot password</Link>
                             {
                                 error && 
                                 <div>
