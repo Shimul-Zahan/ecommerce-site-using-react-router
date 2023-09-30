@@ -3,7 +3,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import Watch from './Watch/Watch';
 
 const Watches = () => {
-  
+
     const watches = useLoaderData();
     const { id } = useParams();
 

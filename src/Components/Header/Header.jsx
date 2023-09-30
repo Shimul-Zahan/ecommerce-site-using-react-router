@@ -3,8 +3,8 @@ import { Link, NavLink } from 'react-router-dom'
 import './Header.css';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 import { searchItemInLC } from '../../Utils/LocalStore/LocalStore';
-import { GoogleAuthProvider, getAuth, signInWithPopup, signOut } from "firebase/auth";
-import app from '../../Firebase/firebase.config';
+import {  signOut } from "firebase/auth";
+import auth from '../../Firebase/firebase.config';
 
 // login er kaj kam
 
@@ -17,22 +17,9 @@ const Header = () => {
         // problems hocche
     }, [])
 
-    const auth = getAuth(app);
-    const provider = new GoogleAuthProvider();
 
     const [loggedUser, setLoggedUser] = useState(null);
 
-    const loginUser = () => {
-        signInWithPopup(auth, provider).then(result => {
-            const user = result.user;
-            setLoggedUser(user);
-            console.log(user.photoURL);
-            console.log(user);
-        })
-            .catch(error => {
-                console.log('error', error)
-            })
-    }
 
     const singOut = () => {
         signOut(auth).then(() => {
@@ -65,21 +52,6 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end text-xl text-black">
-                {/* {
-                    loggedUser ?
-                        <Link onClick={singOut} className='mx-10' to="/watches">Logout</Link> :
-                        <Link onClick={loginUser} className='mx-10' to="/watches">Login</Link>
-                }
-                {
-                    loggedUser &&
-                    <Link to='/userProfile'>
-                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                <div className="w-10 rounded-full">
-                                    <img src={loggedUser.photoURL} />
-                                </div>
-                            </label>
-                    </Link>
-                } */}
                 <div className="flex justify-center items-center gap-8">
                     {
                         loggedUser ? 
@@ -100,8 +72,9 @@ const Header = () => {
                                 </div>
                             </div>
                             </div> :
-                            <Link onClick={loginUser} className='mx-10 btn btn-secondary btn-outline' to="">Login</Link>
+                            <Link  className='mx-10 btn btn-secondary btn-outline' to="/login">Login</Link>
                     }
+                    {/* onClick={loginUser} */}
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
@@ -120,8 +93,9 @@ const Header = () => {
                                 {
                                     loggedUser ? 
                                         <Link onClick={singOut} className='' to="">Logout</Link> :
-                                        <Link onClick={loginUser} className='' to="">Login</Link>
+                                        <Link  className='' to="">Login</Link>
                                 }
+                                {/* onClick={loginUser} */}
                             </li>
                         </ul>
                     </div>

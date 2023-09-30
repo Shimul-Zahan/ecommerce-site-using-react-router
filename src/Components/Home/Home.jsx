@@ -18,7 +18,7 @@ const Home = () => {
       <div >
         <Header />
         {
-          navigation.state === "loading" ? 
+          navigation.state === "loading" ?
             <div className='flex justify-center items-center h-[700px]'>
               <Dna
                 visible={true}

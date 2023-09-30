@@ -12,13 +12,13 @@ const Cart = () => {
         setTotalProducts(items);
     }, [])
 
-  return (
-      <div>
-          {
-              totalProducts.map(cart => <ShowAllCartItem key={cart.id} cart={cart} />)
-          }
-    </div>
-  )
+    return (
+        <div>
+            {
+                totalProducts.map(cart => <ShowAllCartItem key={cart.id} cart={cart} />)
+            }
+        </div>
+    )
 }
 
 export default Cart
