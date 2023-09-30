@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { MyContext } from '../../../Context/MyContextAPI'
 
 const Login = () => {
 
     const { singUpGoogle, signUpwithEmail } = useContext(MyContext)
+    const navigate = useNavigate();
 
     const handleLoginUsingEmail = (e) => {
         e.preventDefault();
@@ -13,6 +14,7 @@ const Login = () => {
 
         signUpwithEmail(email, password)
             .then(res => {
+                navigate('/');
                 console.log(res.user);
             })
             .catch(error => {
@@ -25,6 +27,7 @@ const Login = () => {
         // console.log('clicked')
         singUpGoogle()
             .then(res => {
+                navigate('/');
                 console.log(res.user);
             })
             .catch(error => {

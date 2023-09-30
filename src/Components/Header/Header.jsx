@@ -1,15 +1,19 @@
-import React, { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useContext, useEffect, useState } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import './Header.css';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 import { searchItemInLC } from '../../Utils/LocalStore/LocalStore';
 import {  signOut } from "firebase/auth";
 import auth from '../../Firebase/firebase.config';
+import { MyContext } from '../../Context/MyContextAPI';
 
 // login er kaj kam
 
 const Header = () => {
+
+    const { user } = useContext(MyContext);
     const [cartProducts, setCartProsucts] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const totalProductOfCart = searchItemInLC();
@@ -24,6 +28,7 @@ const Header = () => {
     const singOut = () => {
         signOut(auth).then(() => {
             setLoggedUser(null);
+            navigate('/');
             console.log('Successfull logged out');
         }).catch((error) => {
             console.log(error)
@@ -33,7 +38,7 @@ const Header = () => {
 
 
     return (
-        <div className="navbar bg-base-200 py-8">
+        <div className="navbar py-8">
             <div className="navbar-start">
                 <a className="text-2xl font-bold"><Link to='/'>Foki<span className='text-yellow-500'>nnir Ba</span>zar</Link></a>
             </div>
@@ -54,7 +59,7 @@ const Header = () => {
             <div className="navbar-end text-xl text-black">
                 <div className="flex justify-center items-center gap-8">
                     {
-                        loggedUser ? 
+                        user ? 
                         <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle">
                                 <div className="indicator">
@@ -72,28 +77,33 @@ const Header = () => {
                                 </div>
                             </div>
                             </div> :
-                            <Link  className='mx-10 btn btn-secondary btn-outline' to="/login">Login</Link>
+                            <div>
+                                <Link className='btn btn-secondary btn-outline' to="/login">Registration</Link>
+                            </div>
                     }
                     {/* onClick={loginUser} */}
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
-                                <img src={loggedUser?.photoURL} />
+                                <img src={user?.photoURL} />
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">      
-                            <li>
-                                <a className="justify-between">
-                                    Profile
-                                    <span className="badge">New</span>
-                                </a>
-                            </li>
+                            {
+                                user && 
+                                <li>
+                                    <a className="justify-between">
+                                        Profile
+                                        <span className="badge">New</span>
+                                    </a>
+                                </li>
+                            }
                             <li><a>Settings</a></li>
                             <li>
                                 {
-                                    loggedUser ? 
-                                        <Link onClick={singOut} className='' to="">Logout</Link> :
-                                        <Link  className='' to="">Login</Link>
+                                    user ? 
+                                        <Link onClick={singOut} className='text-red-500'>Logout</Link> :
+                                        <Link  className='' to="/login">Login</Link>
                                 }
                                 {/* onClick={loginUser} */}
                             </li>

@@ -1,5 +1,5 @@
-import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
-import React, { useState } from 'react'
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithPopup } from 'firebase/auth';
+import React, { useEffect, useState } from 'react'
 import { createContext } from 'react'
 import auth from '../Firebase/firebase.config';
 
@@ -20,11 +20,22 @@ const MyContextAPI = ({ children }) => {
         return signInWithPopup(auth, provider);
     }
 
+    useEffect(() => {
+        const subSribed = onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser);
+            console.log('Logged in user', currentUser)
+        }) 
+        return () => {
+            subSribed();
+        };
+    }, [])
+
 
 
 
 // Number of props tha i passed
     const MySharedItem = {
+        user,
         singUpGoogle,
         signUpwithEmail,
     }
