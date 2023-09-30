@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { MyContext } from '../../../Context/MyContextAPI'
+import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 
 const Login = () => {
 
@@ -8,6 +9,7 @@ const Login = () => {
     const navigate = useNavigate();
     const [error, setError] = useState(null);
     const emailRef = useRef(null);
+    const [showPass, setShowPass] = useState(false)
 
     const handleLoginUsingEmail = (e) => {
         e.preventDefault();
@@ -61,6 +63,11 @@ const Login = () => {
         })
     }
 
+    const showPassword = () => {
+        
+    }
+
+
     return (
         <section className=" dark:bg-gray-900">
             <div className="flex flex-col max-h-[570px] items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -80,7 +87,13 @@ const Login = () => {
                             </div>
                             <div>
                                 <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                                <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="" />
+                                <div className='relative'>
+                                    <input type={showPass ? "text" : "password"} name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="" />
+                                    {
+                                        showPass ? <AiFillEye onClick={() => setShowPass(!showPass)} className='absolute top-3 text-xl right-5' />
+                                            : <AiFillEyeInvisible onClick={() => setShowPass(!showPass)} className='absolute top-3 text-xl right-5' />
+                                    }
+                                </div>
                             </div>
 
                             <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 btn btn-outline btn-secondary">Log In</button>

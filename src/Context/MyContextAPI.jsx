@@ -2,6 +2,7 @@ import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged,
 import React, { useEffect, useState } from 'react'
 import { createContext } from 'react'
 import auth from '../Firebase/firebase.config';
+import { searchItemInLC } from '../Utils/LocalStore/LocalStore';
 
 
 export const MyContext = createContext(null);
@@ -9,8 +10,9 @@ export const MyContext = createContext(null);
 const MyContextAPI = ({ children }) => {
 
     const [user, setUser] = useState(null);
-
     const provider = new GoogleAuthProvider();
+    const [TotalItem, setTotalItem] = useState([]);
+    const [count, setCount] = useState(0);
 
     const signUpwithEmail = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password);
@@ -42,6 +44,20 @@ const MyContextAPI = ({ children }) => {
         };
     }, [])
 
+    const getTotalCartItem = () => {
+        // let total = 0;
+        setCount(count+1);
+    }
+
+    // console.log(count)
+
+    useEffect(() => {
+        const totalItem = searchItemInLC();
+        setTotalItem(totalItem);
+    }, [count])
+
+    console.log(TotalItem)
+
 
 
 
@@ -52,6 +68,9 @@ const MyContextAPI = ({ children }) => {
         signUpwithEmail,
         createUser,
         paswordReset,
+        getTotalCartItem,
+        TotalItem,
+        
     }
 
     return (

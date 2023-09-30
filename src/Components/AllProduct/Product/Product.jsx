@@ -1,8 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Product = ({ product }) => {
 
-    const { image, name, description } = product;
+    const { id, image, name, description } = product;
+
+    const showMoreDetails = () => {
+        
+    }
 
     return (
         <div className="card w-80 bg-base-100 shadow-xl pb-4">
@@ -15,7 +20,11 @@ const Product = ({ product }) => {
                 </h2>
                 <p className='text-lg font-medium mb-2'>{ description }</p>
                 <div className="card-actions justify-end">
-                    <div className="badge badge-outline cursor-pointer">More Details</div>
+                    <div >
+                        <Link to={`${id}`}
+                            className="badge badge-outline cursor-pointer">More Details
+                        </Link>
+                    </div>
                     <div className="badge badge-outline cursor-pointer">Buy Now</div>
                 </div>
             </div>

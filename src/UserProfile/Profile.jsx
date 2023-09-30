@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import image from '../../public/vite.svg'
+import { MyContext } from '../Context/MyContextAPI'
 const Profile = () => {
 
-
+  const {user} = useContext(MyContext)
 
   return (
     <main className="profile-page pt-52">
@@ -50,7 +51,7 @@ const Profile = () => {
               </div>
               <div className="text-center mt-12">
                 <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700">
-                  Jenna Stones
+                  {user.email}
                 </h3>
                 <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                   <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
