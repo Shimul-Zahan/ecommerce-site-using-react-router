@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { MyContext } from '../../../Context/MyContextAPI'
 
@@ -6,19 +6,23 @@ const Login = () => {
 
     const { singUpGoogle, signUpwithEmail } = useContext(MyContext)
     const navigate = useNavigate();
+    const [error, setError] = useState(null);
 
     const handleLoginUsingEmail = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
 
+        setError(null)
+
         signUpwithEmail(email, password)
             .then(res => {
                 navigate('/');
-                console.log(res.user);
+                e.target.reset();
+                // console.log(res.user);
             })
             .catch(error => {
-                console.log(error)
+                setError(error.message.slice(10, 100))
         })
     }
 
@@ -31,13 +35,13 @@ const Login = () => {
                 console.log(res.user);
             })
             .catch(error => {
-                console.log(error);
+                console.log(error.message);
         })
     }
 
     return (
-        <section className="bg-gray-50 dark:bg-gray-900">
-            <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+        <section className=" dark:bg-gray-900">
+            <div className="flex flex-col max-h-[570px] items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                 <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
                 </a>
                 <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -58,6 +62,12 @@ const Login = () => {
                             </div>
 
                             <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 btn btn-outline btn-secondary">Log In</button>
+                            {
+                                error && 
+                                <div>
+                                    <h1 className="text-sm text-red-500">{error}</h1>
+                                </div>
+                            }
                             <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                                 New to this site? <a href="#" className="font-medium text-primary-600 hover:underline dark:text-primary-500"><Link to='/register'>Register here.</Link></a>
                             </p>

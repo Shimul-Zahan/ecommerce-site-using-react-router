@@ -78,7 +78,7 @@ const Header = () => {
                             </div>
                             </div> :
                             <div>
-                                <Link className='btn btn-secondary btn-outline' to="/login">Registration</Link>
+                                <Link className='btn btn-secondary btn-outline' to="/Register">Registration</Link>
                             </div>
                     }
                     {/* onClick={loginUser} */}
@@ -103,7 +103,7 @@ const Header = () => {
                                 {
                                     user ? 
                                         <Link onClick={singOut} className='text-red-500'>Logout</Link> :
-                                        <Link  className='' to="/login">Login</Link>
+                                        <Link  className='text-blue-600' to="/login">Login</Link>
                                 }
                                 {/* onClick={loginUser} */}
                             </li>
