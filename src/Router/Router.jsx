@@ -15,6 +15,9 @@ import SunglassDetailsShow from '../Components/DetailsShow/SunglassDetailsShow';
 import Cart from '../Cart/Cart.jsx';
 import BookDetailsShow from '../Components/DetailsShow/BookDetailsShow';
 import Profile from '../UserProfile/Profile.jsx';
+import CourseDetails from '../Components/DetailsShow/CourseDetails.jsx';
+import AllProductDetails from '../Components/DetailsShow/AllProductDetails.jsx';
+import HomeProducts from '../Components/DetailsShow/HomeProducts.jsx';
 
 const router = createBrowserRouter([
     {
@@ -27,9 +30,19 @@ const router = createBrowserRouter([
                 element: <TotalProducts/>
             },
             {
+                path: '/:id',
+                loader: () => fetch('https://fakestoreapi.com/products'),
+                element: <HomeProducts />
+            },
+            {
                 path: '/all',
                 loader: () => fetch('/Products/allProduct.json'),
                 element: <AllProduct />
+            },
+            {
+                path: '/all/:id',
+                loader: () => fetch('/Products/allProduct.json'),
+                element: <AllProductDetails />
             },
             {
                 path: '/all:id',
@@ -40,6 +53,11 @@ const router = createBrowserRouter([
                 path: '/courses',
                 loader: () => fetch('/Products/courses.json'),
                 element: <Courses/>
+            },
+            {
+                path: '/courses/:id',
+                loader: () => fetch('/Products/courses.json'),
+                element: <CourseDetails />
             },
             {
                 path: '/book',

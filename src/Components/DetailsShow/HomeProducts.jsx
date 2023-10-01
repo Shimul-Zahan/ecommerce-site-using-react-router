@@ -3,7 +3,7 @@ import { useLoaderData, useParams, Link } from 'react-router-dom'
 import { saveToLC } from '../../Utils/LocalStore/LocalStore';
 import { MyContext } from '../../Context/MyContextAPI';
 
-const SunglassDetailsShow = () => {
+const HomeProducts = () => {
 
     const { getTotalCartItem } = useContext(MyContext);
     const sunglass = useLoaderData();
@@ -30,4 +30,4 @@ const SunglassDetailsShow = () => {
     )
 }
 
-export default SunglassDetailsShow
+export default HomeProducts

@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Course = ({ course }) => {
     
-    const { image, courseName, courseDetails } = course;
+    const { id, image, courseName, courseDetails } = course;
 
   return (
       <div className="card w-80 bg-base-100 shadow-xl pb-4">
@@ -15,7 +16,9 @@ const Course = ({ course }) => {
               </h2>
               <p className='text-lg font-medium mb-2'>{courseDetails.slice(0, 60) }</p>
               <div className="card-actions justify-end">
-                  <div className="badge badge-outline cursor-pointer">More Details</div>
+                  <Link to={`${id}`}>
+                      <div className="badge badge-outline cursor-pointer">More Details</div>
+                  </Link>
                   <div className="badge badge-outline cursor-pointer">Buy Now</div>
               </div>
           </div>

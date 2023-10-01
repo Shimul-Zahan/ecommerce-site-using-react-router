@@ -1,92 +1,92 @@
 [
     {
-        "id": 1,
+        "id": "watch1",
         "name": "Apple Watch Series 7",
         "brand": "Apple",
         "price": 399.99,
         "description": "The latest Apple Watch with a larger display and advanced health features.",
-        "image": "https://i.ibb.co/Np0hwRN/ab-KOq-I8-Ky-Yahg-unsplash.jpg",
+        "image": "https://i.ibb.co/wKR6tCX/glass-3-8.png",
         "rating": 4.8
     },
     {
-        "id": 2,
+        "id": "watch2",
         "name": "Samsung Galaxy Watch 4",
         "brand": "Samsung",
         "price": 349.99,
         "description": "The Galaxy Watch 4 with ECG, blood pressure monitoring, and AMOLED display.",
-        "image": "https://i.ibb.co/TTGCkgZ/daniel-korpai-Qh-F3-YGs-Dr-Yk-unsplash.jpg",
+        "image": "https://i.ibb.co/M7hSxWt/glass-3-9.png",
         "rating": 4.7
     },
     {
-        "id": 3,
+        "id": "watch3",
         "name": "Fitbit Versa 3",
         "brand": "Fitbit",
         "price": 199.99,
         "description": "Versatile smartwatch with built-in GPS and long battery life.",
-        "image": "https://i.ibb.co/4fkc2C0/david-svihovec-v8-BDEj9bfcs-unsplash.jpg",
+        "image": "https://i.ibb.co/kMFMW7G/glass-3-10.png",
         "rating": 4.6
     },
     {
-        "id": 4,
+        "id": "watch4",
         "name": "Garmin Forerunner 945",
         "brand": "Garmin",
         "price": 549.99,
         "description": "Advanced GPS smartwatch for runners with performance metrics.",
-        "image": "https://i.ibb.co/0qhHxVT/infino-photography-LAacfd1-Hn8g-unsplash.jpg",
+        "image": "https://i.ibb.co/fqHCYkt/glass-3-11.png",
         "rating": 4.9
     },
     {
-        "id": 5,
+        "id": "watch5",
         "name": "Amazfit GTS 3",
         "brand": "Amazfit",
         "price": 149.99,
         "description": "Stylish and affordable smartwatch with SpO2 and sleep tracking.",
-        "image": "https://i.ibb.co/wKjc2Dt/infino-photography-URl-Xm2-Kx6u-I-unsplash.jpg",
+        "image": "https://i.ibb.co/4NvGLjY/glass-3-12.png",
         "rating": 4.5
     },
     {
-        "id": 6,
+        "id": "watch6",
         "name": "Fossil Gen 6",
         "brand": "Fossil",
         "price": 279.99,
         "description": "Fashionable smartwatch with Wear OS by Google and heart rate monitoring.",
-        "image": "https://i.ibb.co/ZfcZFVw/ivan-shilov-Ki-AYZZjpjk-Q-unsplash.jpg",
+        "image": "https://i.ibb.co/YyKtsJH/glass-3-13.png",
         "rating": 4.4
     },
     {
-        "id": 7,
+        "id": "watch7",
         "name": "Huawei Watch GT 3",
         "brand": "Huawei",
         "price": 299.99,
         "description": "Feature-packed smartwatch with HarmonyOS and fitness tracking.",
-        "image": "https://i.ibb.co/SfMrwgw/klim-musalimov-IGO10-Lkx-P-g-unsplash.jpg",
+        "image": "https://i.ibb.co/M19pT7s/glass-3-14.png",
         "rating": 4.7
     },
     {
-        "id": 8,
+        "id": "watch8",
         "name": "TicWatch Pro 3",
         "brand": "Mobvoi",
         "price": 299.99,
         "description": "Dual-screen smartwatch with long battery life and essential health sensors.",
-        "image": "https://i.ibb.co/9qmCK6Z/lloyd-dirks-0vsk2-9dkqo-unsplash.jpg",
+        "image": "https://i.ibb.co/9NK5cLz/glass-3-15.png",
         "rating": 4.6
     },
     {
-        "id": 9,
+        "id": "watch9",
         "name": "Withings Steel HR Sport",
         "brand": "Withings",
         "price": 179.99,
         "description": "Hybrid smartwatch with heart rate tracking and sport features.",
-        "image": "https://i.ibb.co/M6mgcJC/lloyd-dirks-qd-Y76g-IYbw8-unsplash.jpg",
+        "image": "https://i.ibb.co/VWQHhn1/glass-3-16.png",
         "rating": 4.4
     },
     {
-        "id": 10,
+        "id": "watch10",
         "name": "Xiaomi Mi Watch Lite",
         "brand": "Xiaomi",
         "price": 79.99,
         "description": "Affordable smartwatch with fitness tracking and long-lasting battery.",
-        "image": "https://i.ibb.co/1Q51pF8/rachit-tank-2c-FZ-FB08-UM-unsplash.jpg",
+        "image": "https://i.ibb.co/Y8hkkNS/glass-3-17.png",
         "rating": 4.3
     }
 ]

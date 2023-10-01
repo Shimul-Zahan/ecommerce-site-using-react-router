@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "all1",
         "name": "Smartphone",
         "category": "Electronics",
         "price": 499.99,
@@ -9,79 +9,79 @@
         "rating": 4.7
     },
     {
-        "id": 2,
+        "id": "all2",
         "name": "Laptop",
         "category": "Electronics",
         "price": 899.99,
         "description": "Slim and lightweight laptop with a fast SSD and long battery life.",
-        "image": "https://i.ibb.co/TqZqTjp/joshua-woroniecki-lzh3h-Pt-Jz9c-unsplash.jpg",
+        "image": "https://i.ibb.co/ZL4p1Bb/tengyart-S5yh-Q0-Xjdo8-unsplash.jpg",
         "rating": 4.8
     },
     {
-        "id": 3,
+        "id": "all3",
         "name": "Wireless Headphones",
         "category": "Electronics",
         "price": 129.99,
         "description": "Over-ear wireless headphones with noise-canceling technology.",
-        "image": "https://i.ibb.co/kJYDqWM/alexunder-hess-b-WZAPKm0z-ZE-unsplash.jpg",
+        "image": "https://i.ibb.co/1ms53NF/milada-vigerova-x7mq-POxu-JNw-unsplash.jpg",
         "rating": 4.6
     },
     {
-        "id": 4,
+        "id": "all4",
         "name": "Smart TV",
         "category": "Electronics",
         "price": 799.99,
         "description": "Ultra-HD smart TV with streaming apps and voice control.",
-        "image": "https://i.ibb.co/Wxr8WnR/jan-bottinger-k-Chsh-W17rw-unsplash.jpg",
+        "image": "https://i.ibb.co/1QX1sWv/minh-pham-l-B9yl-P8e9-Sg-unsplash.jpg",
         "rating": 4.7
     },
     {
-        "id": 5,
+        "id": "all5",
         "name": "Coffee Maker",
         "category": "Home & Kitchen",
         "price": 69.99,
         "description": "Programmable coffee maker with a built-in grinder and brew strength control.",
-        "image": "https://i.ibb.co/6F2HPJx/milada-vigerova-x7mq-POxu-JNw-unsplash.jpg",
+        "image": "https://i.ibb.co/VJH43TW/planetcare-5cp-BWEl6y6c-unsplash.jpg",
         "rating": 4.5
     },
     {
-        "id": 6,
+        "id": "all6",
         "name": "Fitness Tracker",
         "category": "Sports & Outdoors",
         "price": 49.99,
         "description": "Waterproof fitness tracker with heart rate monitoring and GPS.",
-        "image": "https://i.ibb.co/VLCgBnP/arthur-hinton-Ybg-Lm-O7m-GQ-unsplash.jpg",
+        "image": "https://i.ibb.co/Zh2nv36/shiwa-id-Uae7ou-Mw91-A-unsplash.jpg",
         "rating": 4.3
     },
     {
-        "id": 7,
+        "id": "all7",
         "name": "Desk Chair",
         "category": "Furniture",
         "price": 149.99,
         "description": "Ergonomic desk chair with adjustable lumbar support and breathable mesh back.",
-        "image": "https://i.ibb.co/jHGHmW0/minh-pham-l-B9yl-P8e9-Sg-unsplash.jpg",
+        "image": "https://i.ibb.co/5MPXnT1/jonas-jacobsson-VSYq9n-S-f-Y0-unsplash.jpg",
         "rating": 4.4
     },
     {
-        "id": 8,
+        "id": "all8",
         "name": "Washing Machine",
         "category": "Appliances",
         "price": 699.99,
         "description": "Front-loading washing machine with multiple wash cycles and energy-saving features.",
-        "image": "https://i.ibb.co/zP4QD92/planetcare-5cp-BWEl6y6c-unsplash.jpg",
+        "image": "https://i.ibb.co/YDSXqs7/joshua-woroniecki-lzh3h-Pt-Jz9c-unsplash.jpg",
         "rating": 4.6
     },
     {
-        "id": 9,
+        "id": "all9",
         "name": "Backpack",
         "category": "Fashion",
         "price": 39.99,
         "description": "Stylish backpack with multiple compartments and padded laptop sleeve.",
-        "image": "https://i.ibb.co/D8hCCCb/wiser-by-the-mile-3o-X8-WJOP5-E-unsplash.jpg",
+        "image": "https://i.ibb.co/ZLxGcdh/wiser-by-the-mile-3o-X8-WJOP5-E-unsplash.jpg",
         "rating": 4.2
     },
     {
-        "id": 10,
+        "id": "all10",
         "name": "Bluetooth Speaker",
         "category": "Electronics",
         "price": 79.99,
@@ -90,7 +90,7 @@
         "rating": 4.7
     },
     {
-        "id": 11,
+        "id": "all11",
         "name": "Dining Table",
         "category": "Furniture",
         "price": 299.99,
@@ -99,25 +99,25 @@
         "rating": 4.8
     },
     {
-        "id": 12,
+        "id": "all12",
         "name": "Digital Camera",
         "category": "Electronics",
         "price": 599.99,
         "description": "High-resolution digital camera with interchangeable lenses and 4K video recording.",
-        "image": "https://i.ibb.co/x3CSBMN/tengyart-S5yh-Q0-Xjdo8-unsplash.jpg",
+        "image": "https://i.ibb.co/ZL4p1Bb/tengyart-S5yh-Q0-Xjdo8-unsplash.jpg",
         "rating": 4.9
     },
     {
-        "id": 13,
+        "id": "all13",
         "name": "Microwave Oven",
         "category": "Appliances",
         "price": 89.99,
         "description": "Countertop microwave oven with multiple cooking presets and a turntable.",
-        "image": "https://i.ibb.co/1qQkj1y/vlad-zaytsev-DV3xrcq6h-U4-unsplash.jpg",
+        "image": "https://i.ibb.co/vQxXKkc/vlad-zaytsev-DV3xrcq6h-U4-unsplash.jpg",
         "rating": 4.4
     },
     {
-        "id": 14,
+        "id": "all14",
         "name": "Running Shoes",
         "category": "Sports & Outdoors",
         "price": 79.99,
@@ -126,12 +126,12 @@
         "rating": 4.5
     },
     {
-        "id": 15,
+        "id": "all15",
         "name": "Gaming Console",
         "category": "Electronics",
         "price": 399.99,
         "description": "Gaming console with 4K graphics, a fast processor, and a large game library.",
-        "image": "https://i.ibb.co/N1FztSz/venson-chou-n-D2-Bj-SLt0u-E-unsplash.jpg",
+        "image": "https://i.ibb.co/kgDVfNR/venson-chou-n-D2-Bj-SLt0u-E-unsplash.jpg",
         "rating": 4.7
     }
 ]

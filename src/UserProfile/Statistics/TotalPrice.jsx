@@ -2,7 +2,7 @@ import React, { useCallback, useContext, useState } from "react";
 import { PieChart, Pie, Cell, Legend } from "recharts";
 import { MyContext } from "../../Context/MyContextAPI";
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+const COLORS = ["#FFBB28", "#FF8042"];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
@@ -35,8 +35,8 @@ export default function TotalPriceChart() {
     const { totalPrice } = useContext(MyContext);
 
     const data = [
-        { name: "Limit of Price", value: 1000 },
-        { name: "Your total items price", value: (500 - totalPrice) },
+        { name: "Limit of Price", value: 10000 },
+        { name: "Your total items price", value: (10000 - totalPrice) },
     ];
 
     return (

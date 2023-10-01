@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "book1",
         "title": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "genre": "Fiction",
@@ -10,7 +10,7 @@
         "rating": 4.8
     },
     {
-        "id": 2,
+        "id": "book2",
         "title": "1984",
         "author": "George Orwell",
         "genre": "Dystopian",
@@ -20,7 +20,7 @@
         "rating": 4.7
     },
     {
-        "id": 3,
+        "id": "book3",
         "title": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "genre": "Classic",
@@ -30,7 +30,7 @@
         "rating": 4.6
     },
     {
-        "id": 4,
+        "id": "book4",
         "title": "Harry Potter and the Sorcerer's Stone",
         "author": "J.K. Rowling",
         "genre": "Fantasy",
@@ -40,7 +40,7 @@
         "rating": 4.9
     },
     {
-        "id": 5,
+        "id": "book5",
         "title": "The Catcher in the Rye",
         "author": "J.D. Salinger",
         "genre": "Coming-of-age",
@@ -50,7 +50,7 @@
         "rating": 4.5
     },
     {
-        "id": 6,
+        "id": "book6",
         "title": "Pride and Prejudice",
         "author": "Jane Austen",
         "genre": "Romance",
@@ -60,7 +60,7 @@
         "rating": 4.8
     },
     {
-        "id": 7,
+        "id": "book7",
         "title": "The Hobbit",
         "author": "J.R.R. Tolkien",
         "genre": "Fantasy",
@@ -70,7 +70,7 @@
         "rating": 4.7
     },
     {
-        "id": 8,
+        "id": "book8",
         "title": "The Hunger Games",
         "author": "Suzanne Collins",
         "genre": "Dystopian",
@@ -80,7 +80,7 @@
         "rating": 4.6
     },
     {
-        "id": 9,
+        "id": "book9",
         "title": "The Alchemist",
         "author": "Paulo Coelho",
         "genre": "Adventure",
@@ -90,7 +90,7 @@
         "rating": 4.9
     },
     {
-        "id": 10,
+        "id": "book10",
         "title": "The Shining",
         "author": "Stephen King",
         "genre": "Horror",

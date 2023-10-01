@@ -1,98 +1,98 @@
 [
   {
-    "id": 1,
-    "image": "https://i.ibb.co/ccKLD6m/Rectangle-2-2.png",
+    "id": "course1",
+    "image": "https://i.ibb.co/jwGX4xN/Rectangle-2-2.png",
     "courseName": "Introduction to Programming",
     "courseCredit": 3,
     "courseDetails": "Learn the fundamentals of programming with a focus on problem-solving and algorithm development.",
-    "coursePrice": 299
+    "price": 299
   },
   {
-    "id": 2,
-    "image": "https://i.ibb.co/C7KDdPn/Rectangle-3.png",
+    "id": "course2",
+    "image": "https://i.ibb.co/CsGcjTM/Rectangle-3.png",
     "courseName": "Data Structures",
     "courseCredit": 4,
     "courseDetails": "Explore advanced data structures and algorithms used in computer science and software development.",
-    "coursePrice": 399
+    "price": 399
   },
   {
-    "id": 3,
-    "image": "https://i.ibb.co/RBswD5N/Rectangle-2-3.png",
+    "id": "course3",
+    "image": "https://i.ibb.co/yn6z8gw/Rectangle-2-3.png",
     "courseName": "Introduction to Algorithms",
     "courseCredit": 3,
     "courseDetails": "Build interactive and responsive web applications using React.js.",
-    "coursePrice": 349
+    "price": 349
   },
   {
-    "id": 4,
-    "image": "https://i.ibb.co/G5Qbj46/Rectangle-2-4.png",
+    "id": "course4",
+    "image": "https://i.ibb.co/7gmfgF3/Rectangle-2-4.png",
     "courseName": "Introduction to C++ for DSA",
     "courseCredit": 4,
     "courseDetails": "Learn about database design, SQL, and database administration.",
-    "coursePrice": 429
+    "price": 429
   },
   {
-    "id": 5,
-    "image": "https://i.ibb.co/tM2jhkc/Rectangle-2-5.png",
+    "id": "course5",
+    "image": "https://i.ibb.co/X8sKzhg/Rectangle-2-5.png",
     "courseName": "Artificial Intelligence",
     "courseCredit": 4,
     "courseDetails": "Study machine learning, neural networks, and natural language processing.",
-    "coursePrice": 449
+    "price": 449
   },
   {
-    "id": 6,
-    "image": "https://i.ibb.co/YWxr2tp/Rectangle-2-6.png",
+    "id": "course6",
+    "image": "https://i.ibb.co/X8sKzhg/Rectangle-2-6.png",
     "courseName": "Cybersecurity Fundamentals",
     "courseCredit": 3,
     "courseDetails": "Explore the basics of cybersecurity, including threat analysis and defense strategies.",
-    "coursePrice": 349
+    "price": 349
   },
   {
-    "id": 7,
-    "image": "https://i.ibb.co/qCxDzbg/Rectangle-2.png ",
+    "id": "course7",
+    "image": "https://i.ibb.co/X3TFHR4/Rectangle-2.png",
     "courseName": "Basic OOP Full Course",
     "courseCredit": 3,
     "courseDetails": "Learn software development methodologies, project management, and quality assurance.",
-    "coursePrice": 349
+    "price": 349
   },
   {
-    "id": 8,
-    "image": "https://i.ibb.co/s3Tt3t1/Rectangle-3-1.png",
+    "id": "course8",
+    "image": "https://i.ibb.co/n1sS2z5/Rectangle-3-1.png",
     "courseName": "Mobile App Development",
     "courseCredit": 3,
     "courseDetails": "Create mobile apps for iOS and Android using popular frameworks.",
-    "coursePrice": 349
+    "price": 349
   },
   {
-    "id": 9,
+    "id": "course9",
     "image": "https://i.ibb.co/cvdgjZT/react-Image.png",
     "courseName": "React Full Course",
     "courseCredit": 3,
     "courseDetails": "Understand cloud platforms and services for scalable and cost-effective solutions.",
-    "coursePrice": 349
+    "price": 349
   },
   {
-    "id": 10,
+    "id": "course10",
     "image": "https://i.ibb.co/T267TDB/html.png",
     "courseName": "HTML Full Course",
     "courseCredit": 4,
     "courseDetails": "Analyze large datasets and gain insights using data science techniques.",
-    "coursePrice": 429
+    "price": 429
   },
   {
-    "id": 11,
+    "id": "course11",
     "image": "https://i.ibb.co/VWxHxZY/java-Script.png",
     "courseName": "Java Scrpit Full Course",
     "courseCredit": 3,
     "courseDetails": "Create stunning graphics and visualizations for games and applications.",
-    "coursePrice": 349
+    "price": 349
   },
   {
-    "id": 12,
+    "id": "course12",
     "image": "https://i.ibb.co/mDM6GDs/nodejs-reference-architecture-2x.png",
     "courseName": "Backend with Node JS",
     "courseCredit": 3,
     "courseDetails": "Explore blockchain technology and its applications in various industries.",
-    "coursePrice": 349
+    "price": 349
   }
 ]
