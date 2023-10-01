@@ -13,6 +13,7 @@ const MyContextAPI = ({ children }) => {
     const provider = new GoogleAuthProvider();
     const [TotalItem, setTotalItem] = useState([]);
     const [count, setCount] = useState(0);
+    const [totalPrice, setTotalPrice] = useState(0)
 
     const signUpwithEmail = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password);
@@ -45,20 +46,17 @@ const MyContextAPI = ({ children }) => {
     }, [])
 
     const getTotalCartItem = () => {
-        // let total = 0;
         setCount(count+1);
     }
-
-    // console.log(count)
 
     useEffect(() => {
         const totalItem = searchItemInLC();
         setTotalItem(totalItem);
+        const total = totalItem.reduce((initial, current) => initial + current.price, 0);
+        setTotalPrice(total.toFixed(2))
     }, [count])
 
-    console.log(TotalItem)
-
-
+    // console.log(totalPrice)
 
 
 // Number of props tha i passed
@@ -70,6 +68,7 @@ const MyContextAPI = ({ children }) => {
         paswordReset,
         getTotalCartItem,
         TotalItem,
+        totalPrice,
         
     }
 
